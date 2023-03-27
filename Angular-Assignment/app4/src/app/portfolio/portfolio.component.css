@@ -1,0 +1,81 @@
+.horizontalLine{
+    border-bottom: 1px solid  rgb(45, 64, 70);
+    background-color: rgb(45, 64, 70);
+    border-radius: 10px;
+    padding: 1.3px;
+    width: 50%;
+}
+
+.icon i{
+    color:rgb(45, 64, 70) ;
+}
+h3{
+    font-size: 3rem;
+}
+.col-md-4{
+    cursor: pointer;
+}
+.col-md-4 img{
+    border-radius: 10px;
+   
+}
+.layer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 11px;
+    right: 11px;
+    background-color: rgba(50, 219, 183,0.9);
+    opacity: 0;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+.layer:hover{
+    opacity: 1;
+}
+.layer i{
+    font-size: 4.5rem;
+    font-weight: 800;
+}
+.porto{
+    padding-top: 9rem;
+}
+.display-info{
+    padding-top: 5rem;
+    padding-bottom: 9rem;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99999999;
+    
+   
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 3rem;
+    color:rgb(72, 187, 149) ;
+    cursor: pointer;
+}
+.info-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+button{
+    /* width: 10%; */
+    padding: 15px 25px;
+    background-color: rgb(72, 187, 149); 
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    transition: all 0.1s;
+    font-size: larger;
+    cursor: pointer;
+    
+}
+button:hover{
+    background-color: rgb(56, 139, 112); 
+    color: white;
+}

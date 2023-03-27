@@ -1,0 +1,56 @@
+<div class="contact">
+    <div class="container pt-5 " id="contact">
+        <div class="head text-center d-flex align-items-center flex-column ">
+            <h3>CONTACT ME</h3>
+            <div class="decoration d-flex w-25">
+                <div class="horizontalLine my-3 mx-2"></div>
+                <div class="icon"><i class="fa-solid fa-star  fs-3"></i></div>
+                <div class="horizontalLine my-3 mx-2 "></div>
+            
+    
+        </div>
+        </div>
+        
+        <div class="input-container d-flex align-items-center flex-column mt-3">
+            <div class="control-group w-50 ">
+                <div class="form-group">
+                    <p class="text-success " [hidden]="showName">Name</p>
+            <input type="text" id="name" required="required" placeholder="Name" [(ngModel)]="nameValue" (input)="showNameInput()"  class=" w-100 mb-2 mt-3">
+            <p  class="text-danger" [hidden]="show">Please enter your name.</p>
+                </div>
+                
+            </div>            
+            <div class="control-group w-50 ">
+                    <div class="form-group">
+                        <p class="text-success" [hidden]="showEmail">Email Address</p>   
+                <input type="email" id="email" required="required"   placeholder="Email Address" [(ngModel)]="emailValue" (input)="showEmailInput()" class=" w-100 mb-2 mt-3">
+                <p class="text-danger" [hidden]="show">Please enter your email address.</p>
+                    </div>
+                    
+            </div>
+            <div class="control-group w-50 ">
+                        <div class="form-group">
+                            <p class="text-success" [hidden]="showPhone">Phone Number</p>    
+                    <input type="tel" id="Phone" required="required"  placeholder="Phone Number" [(ngModel)]="phoneValue" (input)="showPhoneInput()"  class=" w-100 mb-2 mt-3">
+                    <p class="text-danger" [hidden]="show">Please enter your phone number.</p>
+                        </div>
+                        
+            </div>     
+            <div class="control-group w-50 ">
+            <div class="form-group">
+                <p class="text-success" [hidden]="showMessage">Message</p>
+            <textarea name="Message" class=" w-100 mb-2 mt-3" placeholder="Message" required="required" id="Message" [(ngModel)]="messageValue" (input)="showMessageInput()"  rows="5"> Message</textarea>
+            <p class="text-danger" [hidden]="show">Please enter a message.</p>
+        </div>
+            
+                            
+            </div>
+            <div class="button d-flex align-items-center justify-content-start w-50">
+                <button class=" my-5 ">Send</button>
+            </div>
+        </div>
+      
+        
+       
+</div>
+</div>
